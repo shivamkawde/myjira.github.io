@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ 
+    
+
+</style>
+<body>
+
+    <p class="cls1">blue</p>
+    <p class="cls1">red</p>
+    <p class="cls1">yellow</p>
+    <p class="cls1">dgdf</p>
+
+
+    <script>
+      let mylist=document.querySelectorAll(".cls1");
+      console.log(mylist)
+      for(let i=0;i<mylist.length;i++)
+      {
+
+          
+        mylist[i].addEventListener("click",function(e){
+            let k=event.target.innerHTML;
+            console.log(event.target.innerHTML);
+            document.body.style.background=k;
+        })
+      }
+     
+
+    </script>
+    
+</body>
+</html>

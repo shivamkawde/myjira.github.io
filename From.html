@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+  <script src="myscript.js" defer></script>
+  <title>Document</title>
+  <style>
+    #Div1 {
+      /* background-color: yellow; */
+      height: 100px;
+      width: 200px;
+      text-align: center;
+      /* background-color: yellowgreen; */
+    }
+
+    #f {
+      height: 100px;
+      max-width: 300px;
+
+      margin: auto;
+      padding: 30px;
+      border: solid;
+      border-color: tomato;
+      background-color: rgb(245, 179, 179);
+
+
+    }
+
+    .in {
+      padding: 5px;
+      margin: 3px;
+    }
+
+    .container1 {
+      margin: 30px;
+      display: inline-block;
+
+    }
+
+    .container1:hover {
+      box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5)
+    }
+
+    .ticket-color {
+      margin-top: auto;
+      width: 200px;
+      text-align: center;
+
+    }
+
+    h1 {
+      font-style: italic;
+    }
+
+    body {
+      background-color: black;
+    }
+
+    #titlee {
+      background-color: white;
+      text-align: center;
+
+
+    }
+
+    li {
+      display: inline;
+
+      /* display: block; */
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+      /* background-color:rgb(99, 85, 85) */
+    }
+
+    li:hover {
+      background-color: peru;
+
+    }
+
+    a {
+      color: white;
+    }
+  </style>
+
+</head>
+
+<body class="mainBody">
+
+
+  <div class="" id="di">
+    <div id="titlee">
+      <h1>jira</h1>
+    </div>
+    <ul>
+      <li><a href="add.html">Home</a></li>
+      <li><a href="delete.html">Delete Tickets</a></li>
+    </ul>
+    <div class="card">
+      <div class="card-header">
+        <h2>Add task</h2>
+      </div>
+      <br>
+      <div class="card-body">
+
+        <div class="form-group" id="in">
+          <label for="exampleInputPassword1">
+            <h3>Ticket Id</h3>
+          </label>
+          <input type="text" class="form-control" id="pw" placeholder="Enter Id">
+        </div>
+        <br>
+        <div class="form-group" id="in">
+          <label for="exampleInputPassword1">
+            <h3>Ticket Description</h3>
+          </label>
+          <input type="text" class="form-control" id="td" placeholder="Enter Description">
+        </div>
+        <br>
+        <div id="in">
+          <label for="cars">
+            <h3>Choose a Task:</h3>
+          </label>
+
+          <select class="form-select" aria-label="Default select example" id="color">
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+            <option value="red">red</option>
+            <option value="yellow">yellow</option>
+          </select>
+        </div>
+        <br>
+        <button class="btn btn-success" id="add" onclick="additem()"> click</button>
+
+      </div>
+    </div>
+    <div>
+
+      <div class="card">
+        <div class="card-body">
+          <label for="cars">
+            <h3>Find Tickets:</h3>
+          </label>
+          <select class="form-select" aria-label="Default select example" name="" id="filter" onchange="getfilter()">
+            <option value="d">Choose Tickets</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+            <option value="red">red</option>
+            <option value="yellow">yellow</option>
+          </select>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <script>
+    let x = document.cookie.split('=');
+    if (x[1] == undefined)
+      window.location = "index.html"
+  </script>
+
+
+
+</body>
+
+</html>
